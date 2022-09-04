@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
 :root {
+  --primary-color-hue: 252;
   --color-dark: hsl(252, 30%, 17%);
   --color-white: hsl(252, 30%, 100%);
   --color-light: hsl(252, 20%, 90%);
   --color-gray: hsl(252, 15%, 65%);
-  --color-primary: hsl(252, 75%, 60%);
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: hsl(252, 100%, 90%);
   --color-success: hsl(120, 80%, 65%);
   --color-danger: hsl(0, 95%, 65%);
@@ -186,7 +185,7 @@ main .container .left .profile {
 }
 
 .left .sidebar i .notification-count {
-  background: var(--color-danger);
+  background: var(--color-primary);
   color: white;
   font-size: 0.7rem;
   border-radius: 0.8rem;
@@ -567,7 +566,7 @@ main .container .right {
   padding: 3rem;
   border-radius: var(--card-border-radius);
   width: 50%;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0rem 1rem var(--color-primary);
 }
 
 /* -------------- FONT SIZE ------------------ */
@@ -723,6 +722,9 @@ main .container .right {
   .left .btn {
     display: none;
   }
+  .customize-theme .card {
+    width: 80vw;
+  }
 }
 
 /* ================================================= */
@@ -760,5 +762,8 @@ main .container .right {
   }
   main .container .right {
     display: none;
+  }
+  .customize-theme .card {
+    width: 95vw;
   }
 }
