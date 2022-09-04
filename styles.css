@@ -78,7 +78,7 @@ img {
 
 .btn-primary {
   background: var(--color-primary);
-  color: var(--color-dark);
+  color: white;
 }
 
 .text-bold {
@@ -159,6 +159,7 @@ main .container .left .profile {
   align-items: center;
   column-gap: 1rem;
   width: 100%;
+  color: var(--color-dark);
 }
 
 /* Sidebar Menu */
@@ -273,6 +274,7 @@ main .container .left .profile {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1rem;
+  color: var(--color-dark);
 }
 
 .left .notification-popup small {
@@ -499,7 +501,7 @@ main .container .right {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  border: 3px solid var(--color-white);
+  border: 3px solid white;
   background: var(--color-primary);
   position: absolute;
   bottom: 0;
@@ -509,8 +511,8 @@ main .container .right {
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  border: 3px solid var(--color-white);
-  background: var(--color-light);
+  border: 3px solid white;
+  background: var(--color-gray);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -682,7 +684,7 @@ main .container .right {
 }
 
 .customize-theme .choose-bg .bg-1 {
-  background: var(--color-white);
+  background: white;
   color: black;
 }
 .customize-theme .choose-bg .bg-2 {

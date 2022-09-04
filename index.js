@@ -147,12 +147,15 @@ const changeBG = () => {
 }
 
 Bg1.addEventListener('click', () => {
+  darkColorLightness = '17%'
+  whiteColorLightness = '95%'
+  lightColorLightness = '100%'
   // Add active class
   Bg1.classList.add('active')
   // remove active class
   Bg2.classList.remove('active')
   Bg3.classList.remove('active')
-  window.location.reload()
+  changeBG()
 })
 Bg2.addEventListener('click', () => {
   darkColorLightness = '95%'
